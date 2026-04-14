@@ -3,66 +3,207 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <title>Lucas Figueiredo | Portfólio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="hero">
-    <h1>Lucas Figueiredo</h1>
-    <p>Analista de Dados com foco em BI, analytics e projetos aplicados ao esporte</p>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/lucas-figueiredo-analista-dados/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/lucasbf7" target="_blank">GitHub</a>
-      <a href="mailto:lucasborges_06@hotmail.com">E-mail</a>
+    <div class="hero-content">
+      <h1>Lucas Figueiredo</h1>
+      <p class="subtitle">
+        Analista de Dados com foco em BI, analytics e projetos aplicados ao esporte
+      </p>
+
+      <div class="hero-links">
+        <a
+          href="https://www.linkedin.com/in/lucas-figueiredo-analista-dados/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/icons/linkedin.png" alt="LinkedIn" />
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/lucasbf7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/icons/github.png" alt="GitHub" />
+          GitHub
+        </a>
+
+        <a href="mailto:lucasborges_06@hotmail.com">
+          <img src="assets/icons/email.png" alt="E-mail" />
+          E-mail
+        </a>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <section>
-      <h2>Sobre</h2>
-      <p>
+    <section class="section intro">
+      <div class="section-header">
+        <p class="section-label">Sobre</p>
+        <h2>Transformando dados em narrativas claras e úteis</h2>
+      </div>
+
+      <p class="lead">
         Profissional de Dados com experiência em análise, BI e suporte à tomada de decisão,
         atuando com SQL, Python, Power BI e visualização de dados. Também desenvolvo projetos
-        públicos aplicados ao futebol, com foco em transformar dados em narrativas claras e úteis.
+        públicos aplicados ao futebol, com foco em transformar dados em análises acessíveis,
+        comparações relevantes e apoio à tomada de decisão.
       </p>
     </section>
 
-    <section>
-      <h2>Projetos em destaque</h2>
+    <section class="section">
+      <div class="section-header">
+        <p class="section-label">Projetos</p>
+        <h2>Projetos em destaque</h2>
+      </div>
 
-      <article class="card">
-        <h3>Brasileirão BI</h3>
-        <p>Painel público com análise de desempenho, comparativos e projeções do campeonato.</p>
-        <p><strong>Stack:</strong> Python, SQL, BigQuery, GitHub Actions, Looker Studio</p>
-        <p>
-          <a href="https://lookerstudio.google.com/reporting/4701d9f9-2b46-453e-9e37-fef7763c73ac" target="_blank">Dashboard</a> |
-          <a href="https://github.com/lucasbf7/brasileirao-bi" target="_blank">GitHub</a>
-        </p>
+      <article class="project-card">
+        <div class="project-image">
+          <img
+            src="assets/projects/brasileirao-bi.png"
+            alt="Preview do projeto Brasileirão BI"
+          />
+        </div>
+
+        <div class="project-content">
+          <h3>Brasileirão BI</h3>
+          <p>
+            Painel público com análise de desempenho, comparativos e projeções do campeonato,
+            combinando pipeline automatizada, modelagem analítica e visualização interativa.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>GCP</span>
+            <span>BigQuery</span>
+            <span>GitHub Actions</span>
+            <span>Looker Studio</span>
+          </div>
+
+          <div class="project-links">
+            <a
+              class="btn btn-primary"
+              href="https://lookerstudio.google.com/reporting/4701d9f9-2b46-453e-9e37-fef7763c73ac"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver dashboard
+            </a>
+
+            <a
+              class="btn btn-secondary"
+              href="https://github.com/lucasbf7/brasileirao-bi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver no GitHub
+            </a>
+          </div>
+        </div>
       </article>
 
-      <article class="card">
-        <h3>Vasco BI</h3>
-        <p>Projeto de visualização e acompanhamento analítico com foco em desempenho e tendências.</p>
-        <p><strong>Stack:</strong> Python, SQL, BigQuery, Looker Studio</p>
-        <p>
-          <a href="https://app.powerbi.com/links/hFPnpDhlDV?ctid=da49a844-e2e3-40af-86a6-c3819d704f49&pbi_source=linkShare&bookmarkGuid=3bc10e4a-d702-469b-a742-91bf845277e7" target="_blank">Dashboard</a>
-        </p>
+      <article class="project-card project-card-vasco">
+        <div class="project-image project-image-vasco">
+          <img
+            src="assets/projects/vasco-bi_1.png"
+            alt="Preview do projeto Vasco BI"
+          />
+        </div>
+
+        <div class="project-content">
+          <h3>Vasco BI</h3>
+          <p>
+            Projeto de visualização e acompanhamento analítico com foco em desempenho,
+            tendências e leitura de contexto competitivo, com painel desenvolvido em Power BI.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Power BI</span>
+          </div>
+
+          <p class="project-note">
+            O dashboard completo pode exigir autenticação no Power BI. Por isso, a prévia visual
+            do projeto está disponível nesta página.
+          </p>
+
+          <div class="project-links">
+            <a
+              class="btn btn-primary"
+              href="https://app.powerbi.com/links/hFPnpDhlDV?ctid=da49a844-e2e3-40af-86a6-c3819d704f49&pbi_source=linkShare&bookmarkGuid=3bc10e4a-d702-469b-a742-91bf845277e7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abrir dashboard
+            </a>
+          </div>
+        </div>
       </article>
     </section>
 
-    <section>
-      <h2>Ferramentas</h2>
-      <p>SQL, Python, Power BI, Looker Studio, BigQuery, GitHub Actions</p>
-    </section>
+    <section class="section">
+      <div class="section-header">
+        <p class="section-label">Stack</p>
+        <h2>Ferramentas e foco de atuação</h2>
+      </div>
 
-    <section>
-      <h2>Contato</h2>
-      <p>
-        <a href="https://www.linkedin.com/in/lucas-figueiredo-analista-dados/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/lucasbf7" target="_blank">GitHub</a> |
-        <a href="mailto:lucasborges_06@hotmail.com">E-mail</a>
-      </p>
+      <div class="tools-grid">
+        <div class="tool-box">
+          <h3>Dados & BI</h3>
+          <p>SQL, Python, Power BI, Looker Studio, BigQuery</p>
+        </div>
+
+        <div class="tool-box">
+          <h3>Analytics</h3>
+          <p>Modelagem analítica, dashboards, automação e análise exploratória</p>
+        </div>
+
+        <div class="tool-box">
+          <h3>Interesse atual</h3>
+          <p>BI esportivo, sports analytics e visualização de dados aplicada ao futebol</p>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-title">Lucas Figueiredo</p>
+      <p class="footer-text">Dados, BI e analytics com projetos aplicados ao esporte.</p>
+
+      <div class="footer-links">
+        <a
+          href="https://www.linkedin.com/in/lucas-figueiredo-analista-dados/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/lucasbf7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a href="mailto:lucasborges_06@hotmail.com">E-mail</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
